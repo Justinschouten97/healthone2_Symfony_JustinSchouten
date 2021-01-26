@@ -1,0 +1,53 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Arts index{% endblock %}
+
+{% block content %}
+    <h1>Arts index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Naam</th>
+                <th>Tussenvoegsel</th>
+                <th>Achternaam</th>
+                <th>SoortArts</th>
+                <th>Straat</th>
+                <th>HuisNr</th>
+                <th>Postcode</th>
+                <th>Plaats</th>
+                <th>Email</th>
+                <th>TelefoonNummer</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for art in arts %}
+            <tr>
+                <td>{{ art.id }}</td>
+                <td>{{ art.naam }}</td>
+                <td>{{ art.tussenvoegsel }}</td>
+                <td>{{ art.achternaam }}</td>
+                <td>{{ art.soortArts }}</td>
+                <td>{{ art.straat }}</td>
+                <td>{{ art.huisNr }}</td>
+                <td>{{ art.postcode }}</td>
+                <td>{{ art.plaats }}</td>
+                <td>{{ art.email }}</td>
+                <td>{{ art.telefoonNummer }}</td>
+                <td>
+                    <a href="{{ path('arts_show', {'id': art.id}) }}">show</a>
+                    <a href="{{ path('arts_edit', {'id': art.id}) }}" class="btn btn-outline-warning">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="12">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('arts_new') }}">Create new</a>
+{% endblock %}

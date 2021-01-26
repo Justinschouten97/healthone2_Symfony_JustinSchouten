@@ -1,0 +1,62 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Arts{% endblock %}
+
+{% block content %}
+    <h1>Arts</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ art.id }}</td>
+            </tr>
+            <tr>
+                <th>Naam</th>
+                <td>{{ art.naam }}</td>
+            </tr>
+            <tr>
+                <th>Tussenvoegsel</th>
+                <td>{{ art.tussenvoegsel }}</td>
+            </tr>
+            <tr>
+                <th>Achternaam</th>
+                <td>{{ art.achternaam }}</td>
+            </tr>
+            <tr>
+                <th>SoortArts</th>
+                <td>{{ art.soortArts }}</td>
+            </tr>
+            <tr>
+                <th>Straat</th>
+                <td>{{ art.straat }}</td>
+            </tr>
+            <tr>
+                <th>HuisNr</th>
+                <td>{{ art.huisNr }}</td>
+            </tr>
+            <tr>
+                <th>Postcode</th>
+                <td>{{ art.postcode }}</td>
+            </tr>
+            <tr>
+                <th>Plaats</th>
+                <td>{{ art.plaats }}</td>
+            </tr>
+            <tr>
+                <th>Email</th>
+                <td>{{ art.email }}</td>
+            </tr>
+            <tr>
+                <th>TelefoonNummer</th>
+                <td>{{ art.telefoonNummer }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('arts_index') }}">back to list</a>
+
+    <a href="{{ path('arts_edit', {'id': art.id}) }}" class="btn btn-outline-warning">edit</a>
+
+    {{ include('arts/_delete_form.html.twig') }}
+{% endblock %}

@@ -1,0 +1,39 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Medicijn index{% endblock %}
+
+{% block content %}
+    <h1>Medicijn index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>MedicijnNaam</th>
+                <th>MedicijnWerking</th>
+                <th>MedicijnBijwerking</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for medicijn in medicijnen %}
+            <tr>
+                <td>{{ medicijn.id }}</td>
+                <td>{{ medicijn.medicijnNaam }}</td>
+                <td>{{ medicijn.medicijnWerking }}</td>
+                <td>{{ medicijn.medicijnBijwerking }}</td>
+                <td>
+                    <a href="{{ path('medicijn_show', {'id': medicijn.id}) }}">show</a>
+                    <a href="{{ path('medicijn_edit', {'id': medicijn.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="5">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('medicijn_new') }}">Create new</a>
+{% endblock %}

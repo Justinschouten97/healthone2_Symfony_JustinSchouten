@@ -1,0 +1,47 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Recept index{% endblock %}
+
+{% block content %}
+    <h1>Recept index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Patient naam</th>
+                <th>Dosis</th>
+                <th>Herhalingen</th>
+                <th>AfgifteDatum</th>
+                <th>GebruikenTot</th>
+                <th>Duur</th>
+                <th>Arts</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for recept in recepts %}
+            <tr>
+                <td>{{ recept.id }}</td>
+                <td>{{ recept.patient.tussenvoegsel }}{{ recept.patient.achternaam }}, {{ recept.patient.naam }}</td>
+                <td>{{ recept.dosis }}</td>
+                <td>{{ recept.herhalingen }}</td>
+                <td>{{ recept.afgifteDatum ? recept.afgifteDatum|date('Y-m-d') : '' }}</td>
+                <td>{{ recept.gebruikenTot ? recept.gebruikenTot|date('Y-m-d') : '' }}</td>
+                <td>{{ recept.duur }}</td>
+                <td>{{ recept.arts.achternaam }}</td>
+                <td>
+                    <a href="{{ path('recept_show', {'id': recept.id}) }}">show</a>
+                    <a href="{{ path('recept_edit', {'id': recept.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="7">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('recept_new') }}">Create new</a>
+{% endblock %}

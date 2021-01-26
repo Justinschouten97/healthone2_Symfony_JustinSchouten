@@ -1,0 +1,11 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}New Arts{% endblock %}
+
+{% block content %}
+    <h1>Create new Arts</h1>
+
+    {{ include('arts/_form.html.twig') }}
+
+    <a href="{{ path('arts_index') }}">back to list</a>
+{% endblock %}

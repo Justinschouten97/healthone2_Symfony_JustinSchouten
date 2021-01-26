@@ -1,0 +1,34 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Medicijn{% endblock %}
+
+{% block content %}
+    <h1>Medicijn</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ medicijn.id }}</td>
+            </tr>
+            <tr>
+                <th>MedicijnNaam</th>
+                <td>{{ medicijn.medicijnNaam }}</td>
+            </tr>
+            <tr>
+                <th>MedicijnWerking</th>
+                <td>{{ medicijn.medicijnWerking }}</td>
+            </tr>
+            <tr>
+                <th>MedicijnBijwerking</th>
+                <td>{{ medicijn.medicijnBijwerking }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('medicijn_index') }}">back to list</a>
+
+    <a href="{{ path('medicijn_edit', {'id': medicijn.id}) }}">edit</a>
+
+    {{ include('medicijn/_delete_form.html.twig') }}
+{% endblock %}

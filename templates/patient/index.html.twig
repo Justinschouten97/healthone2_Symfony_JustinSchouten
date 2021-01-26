@@ -1,0 +1,51 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Patient index{% endblock %}
+
+{% block content %}
+    <h1>Patient index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Naam</th>
+                <th>Tussenvoegsel</th>
+                <th>Achternaam</th>
+                <th>ZkNummer</th>
+                <th>HuisNr</th>
+                <th>Postcode</th>
+                <th>Email</th>
+                <th>TelefoonNummer</th>
+                <th>Straat</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for patient in patients %}
+            <tr>
+                <td>{{ patient.id }}</td>
+                <td>{{ patient.naam }}</td>
+                <td>{{ patient.tussenvoegsel }}</td>
+                <td>{{ patient.achternaam }}</td>
+                <td>{{ patient.zkNummer }}</td>
+                <td>{{ patient.huisNr }}</td>
+                <td>{{ patient.postcode }}</td>
+                <td>{{ patient.email }}</td>
+                <td>{{ patient.telefoonNummer }}</td>
+                <td>{{ patient.straat }}</td>
+                <td>
+                    <a href="{{ path('patient_show', {'id': patient.id}) }}">show</a>
+                    <a href="{{ path('patient_edit', {'id': patient.id}) }}">edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="11">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('patient_new') }}">Create new</a>
+{% endblock %}

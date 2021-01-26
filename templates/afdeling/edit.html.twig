@@ -1,0 +1,13 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Edit Afdeling{% endblock %}
+
+{% block content %}
+    <h1>Edit Afdeling</h1>
+
+    {{ include('afdeling/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('afdeling_index') }}">back to list</a>
+
+    {{ include('afdeling/_delete_form.html.twig') }}
+{% endblock %}

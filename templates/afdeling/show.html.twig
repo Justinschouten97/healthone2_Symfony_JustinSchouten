@@ -1,0 +1,30 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Afdeling{% endblock %}
+
+{% block content %}
+    <h1>Afdeling</h1>
+
+    <table class="table">
+        <tbody>
+            <tr>
+                <th>Id</th>
+                <td>{{ afdeling.id }}</td>
+            </tr>
+            <tr>
+                <th>Naam</th>
+                <td>{{ afdeling.naam }}</td>
+            </tr>
+            <tr>
+                <th>Locatie</th>
+                <td>{{ afdeling.locatie }}</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <a href="{{ path('afdeling_index') }}">back to list</a>
+
+    <a href="{{ path('afdeling_edit', {'id': afdeling.id}) }}" class="btn btn-outline-warning">edit</a>
+
+    {{ include('afdeling/_delete_form.html.twig') }}
+{% endblock %}

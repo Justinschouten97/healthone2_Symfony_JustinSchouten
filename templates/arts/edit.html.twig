@@ -1,0 +1,13 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Edit Arts{% endblock %}
+
+{% block content %}
+    <h1>Edit Arts</h1>
+
+    {{ include('arts/_form.html.twig', {'button_label': 'Update'}) }}
+
+    <a href="{{ path('arts_index') }}">back to list</a>
+
+    {{ include('arts/_delete_form.html.twig') }}
+{% endblock %}

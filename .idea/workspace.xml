@@ -2,59 +2,97 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ec40ed-17b5-4f4e-bd77-8ab7ebc5efc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.test" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/console" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/phpunit" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/bundles.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/cache.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/debug.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/doctrine_migrations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/mailer.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/deprecations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/doctrine.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/prod/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/routing.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/sensio_framework_extra.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/monolog.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/test/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/translation.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/packages/validator.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/preload.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/annotations.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/framework.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/routes/dev/web_profiler.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/services.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/migrations/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/phpunit.xml.dist" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Entity/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Kernel.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Repository/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symfony.lock" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/bootstrap.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/translations/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Afdeling.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Arts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Medicijn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Patient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/Recept.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/packages/security_checker.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210120200616.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210126211544.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/migrations/Version20210126212338.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/login.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/stylesHome.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/images-1.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/images-2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/images-3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/images-4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/img/logo_small_icon_only.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/AfdelingController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ArtsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/MedicijnController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/PatientController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/ReceptController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Afdeling.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Arts.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Medicijn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Patient.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Entity/Recept.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/AfdelingType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ArtsType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/MedicijnType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/PatientType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/ReceptType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/AfdelingRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ArtsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/MedicijnRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/PatientRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Repository/ReceptRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Security/LoginFormAuthentication.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/home.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/admin/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/afdeling/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/afdeling/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/afdeling/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/afdeling/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/afdeling/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/afdeling/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/arts/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/arts/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/arts/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/arts/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/arts/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/arts/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/default.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medicijn/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medicijn/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medicijn/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medicijn/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medicijn/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/medicijn/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patient/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patient/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patient/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patient/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patient/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/patient/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recept/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recept/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recept/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recept/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recept/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/recept/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/bootstrap.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/cli-config.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210116151544.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210120214010.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210122174450.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210124144409.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210124144741.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210124145321.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210124150053.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210125122044.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210125122836.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210125123432.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/package-lock.json" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/public/css/stylesHome.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/public/img/images-1.jpg" afterDir="false" />
@@ -62,23 +100,65 @@
       <change afterPath="$PROJECT_DIR$/../healthone7/public/img/images-3.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/public/img/images-4.jpg" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/src/Controller/AdminController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Controller/AfdelingController.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/src/Controller/ArtsController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Controller/RegistrationController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Controller/SecurityController.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Entity/Afdeling.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/src/Entity/Medicijn.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Entity/User.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/AfdelingType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/ArtsFromType.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/MedicijnFromType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/PatientFromType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/ReceptFromType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/RegistrationFormType.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Form/RegistrationFormTypeRole.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Repository/AfdelingRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/src/Repository/MedicijnRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Repository/MedicijnsRepository.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/src/Repository/UserRepository.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/index.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/medicijnen.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/new.artsen.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/new.medicijnen.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/new.patienten.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/new.recepten.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/admin/patienten.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/afdeling/_delete_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/afdeling/_form.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/afdeling/edit.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/afdeling/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/afdeling/new.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/afdeling/show.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/arts/artsen.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/arts/index.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/arts/medicijnen.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/arts/patienten.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/arts/recepten.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/bezoeker/index.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/bezoeker/medicijnen.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/default.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/registration/register.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../healthone7/templates/security/login.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7_JustinSchouten(1.3).zip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/twig.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/routes.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/routes.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/edit.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/edit.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/new.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/new.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/user/show.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/user/show.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.idea/healthone7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.idea/healthone7.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../healthone7/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/config/packages/security.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/config/packages/twig.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/config/packages/twig.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/src/Controller/BezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/src/Controller/BezoekerController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/templates/base.html.twig" afterDir="false" />
@@ -90,12 +170,12 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -203,18 +283,31 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1nLcKcZ49un7PcdRIf5odAw96ya" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\xampp\htdocs\healthone10" />
+      <recent name="C:\xampp\htdocs\healthone10\src\Entity" />
+      <recent name="C:\xampp\htdocs\healthone10\src\Controller" />
+      <recent name="C:\xampp\htdocs\healthone10\templates" />
+      <recent name="C:\xampp\htdocs\healthone10\src\Repository" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -224,11 +317,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611172748589</updated>
-      <workItem from="1611172750012" duration="74000" />
+      <workItem from="1611172750012" duration="11992000" />
+      <workItem from="1611494863640" duration="622000" />
+      <workItem from="1611659259209" duration="5272000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

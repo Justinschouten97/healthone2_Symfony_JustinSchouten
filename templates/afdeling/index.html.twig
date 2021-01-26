@@ -1,0 +1,37 @@
+{% extends 'default.html.twig' %}
+
+{% block title %}Afdeling index{% endblock %}
+
+{% block content %}
+    <h1>Afdeling index</h1>
+
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Naam</th>
+                <th>Locatie</th>
+                <th>actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for afdeling in afdelings %}
+            <tr>
+                <td>{{ afdeling.id }}</td>
+                <td>{{ afdeling.naam }}</td>
+                <td>{{ afdeling.locatie }}</td>
+                <td>
+                    <a href="{{ path('afdeling_show', {'id': afdeling.id}) }}">show</a>
+                    <a href="{{ path('afdeling_edit', {'id': afdeling.id}) }}"><button class="btn btn-outline-warning"></button>edit</a>
+                </td>
+            </tr>
+        {% else %}
+            <tr>
+                <td colspan="4">no records found</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <a href="{{ path('afdeling_new') }}">Create new</a>
+{% endblock %}
