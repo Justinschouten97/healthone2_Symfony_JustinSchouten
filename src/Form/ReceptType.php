@@ -19,16 +19,15 @@ class ReceptType extends AbstractType
                 'class' => Patient::class,
                 'choice_label' => 'achternaam'
             ))
-            ->add('dosis')
-            ->add('herhalingen')
-            ->add('afgifteDatum')
             ->add('arts', EntityType::class, array(
                 'class' => Arts::class,
                 'choice_label' => 'achternaam'
             ))
-            ->add('gebruikenTot')
+            ->add('dosis')
             ->add('duur')
-
+            ->add('herhalingen')
+            ->add('afgifteDatum')
+            ->add('gebruikenTot')
         ;
     }
 
