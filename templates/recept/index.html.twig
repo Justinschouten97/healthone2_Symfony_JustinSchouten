@@ -31,8 +31,8 @@
                 <td>{{ recept.duur }}</td>
                 <td>{{ recept.arts.achternaam }}</td>
                 <td>
-                    <a href="{{ path('recept_show', {'id': recept.id}) }}">show</a>
-                    <a href="{{ path('recept_edit', {'id': recept.id}) }}">edit</a>
+                    <a href="{{ path('recept_show', {'id': recept.id}) }}"><button class="btn btn-outline-success">Show</button></a>
+                    <a href="{{ path('recept_edit', {'id': recept.id}) }}"><button class="btn btn-outline-warning">edit</button></a>
                 </td>
             </tr>
         {% else %}
@@ -43,5 +43,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('recept_new') }}">Create new</a>
+    <a href="{{ path('recept_new') }}"><button class="btn btn-outline-primary">New</button></a>
 {% endblock %}

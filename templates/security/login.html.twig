@@ -36,14 +36,14 @@
 
         <div class="checkbox mb-3">
             <label>
-                <a class="btn btn-danger" href="{{ path('app_register') }}">Registreren</a>
+                <a class="btn btn-outline-danger" href="{{ path('app_register') }}">Registreren</a>
             </label>
         </div>
 
         <input type="hidden" name="_csrf_token"
                value="{{ csrf_token('authenticate') }}"
         >
-        <button class="btn btn-lg btn-primary" type="submit">
+        <button class="btn btn-lg btn-outline-success" type="submit">
             Sign in
         </button>
     </form>

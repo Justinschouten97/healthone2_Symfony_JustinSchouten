@@ -13,11 +13,12 @@
                 <th>Tussenvoegsel</th>
                 <th>Achternaam</th>
                 <th>ZkNummer</th>
-                <th>HuisNr</th>
+                <th>Arts</th>
+                <th>Straat</th>
+                <th>Huis nr.</th>
                 <th>Postcode</th>
                 <th>Email</th>
                 <th>TelefoonNummer</th>
-                <th>Straat</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -29,14 +30,15 @@
                 <td>{{ patient.tussenvoegsel }}</td>
                 <td>{{ patient.achternaam }}</td>
                 <td>{{ patient.zkNummer }}</td>
+                <td>{{ patient.arts.achternaam }}</td>
+                <td>{{ patient.straat }}</td>
                 <td>{{ patient.huisNr }}</td>
                 <td>{{ patient.postcode }}</td>
                 <td>{{ patient.email }}</td>
-                <td>{{ patient.telefoonNummer }}</td>
-                <td>{{ patient.straat }}</td>
+                <td>{{ 0 }}{{ patient.telefoonNummer }}</td>
                 <td>
-                    <a href="{{ path('patient_show', {'id': patient.id}) }}">show</a>
-                    <a href="{{ path('patient_edit', {'id': patient.id}) }}">edit</a>
+                    <a href="{{ path('patient_show', {'id': patient.id}) }}"><button class="btn btn-outline-success">Show</button></a>
+                    <a href="{{ path('patient_edit', {'id': patient.id}) }}"><button class="btn btn-outline-warning">Edit</button></a>
                 </td>
             </tr>
         {% else %}
@@ -47,5 +49,5 @@
         </tbody>
     </table>
 
-    <a href="{{ path('patient_new') }}">Create new</a>
+    <a href="{{ path('patient_new') }}"><button class="btn btn-outline-primary">New</button></a>
 {% endblock %}

@@ -50,9 +50,9 @@
         </tbody>
     </table>
 
-    <a href="{{ path('patient_index') }}">back to list</a>
+    <a href="{{ path('patient_index') }}"><button class="btn btn-outline-primary">Back</button></a>
 
-    <a href="{{ path('patient_edit', {'id': patient.id}) }}">edit</a>
+    <a href="{{ path('patient_edit', {'id': patient.id}) }}"><button class="btn btn-outline-warning">edit</button></a>
 
     {{ include('patient/_delete_form.html.twig') }}
 {% endblock %}
