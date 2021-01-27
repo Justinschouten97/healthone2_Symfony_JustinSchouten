@@ -4,7 +4,9 @@ namespace App\Controller;
 
 use App\Entity\User;
 use App\Form\RegistrationFormType;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
+use Symfony\Component\Form\FormEvent;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
@@ -22,6 +24,11 @@ class RegistrationController extends AbstractController
         $form->handleRequest($request);
 
         if ($form->isSubmitted() && $form->isValid()) {
+
+            // Rol geven aan de gene die registreerd
+            $rolesArr = array('ROLE_ADMIN');
+            $user->setRoles($rolesArr);
+
             // encode the plain password
             $user->setPassword(
                 $passwordEncoder->encodePassword(
@@ -35,7 +42,11 @@ class RegistrationController extends AbstractController
             $entityManager->flush();
             // do anything else you need here, like send an email
 
-            return $this->redirectToRoute('user_index');
+            if ($user = ["ROLE_ADMIN"]) {
+                return $this->redirectToRoute('homepage');
+            } else {
+                return $this->redirectToRoute('home_bezoeker');
+            }
         }
 
         return $this->render('registration/register.html.twig', [
