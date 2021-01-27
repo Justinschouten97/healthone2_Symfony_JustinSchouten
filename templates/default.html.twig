@@ -25,38 +25,33 @@
                 </div>
             {% endfor %}
         </header>
-        <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-togler" style="margin-bottom: 0px"
-                {#             data-toggle="collapse" data-targer="#thetargert"#}
-        >
+        <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-togler" style="margin-bottom: 0px">
             <a class="navbar-brand" href="#"><span class="fas fa-hospital"></span> </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
                 <span class="navbar-toggler-icon"></span>
             </button>
-
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="navbar-nav">
                     {% block menu %}
+                        {% if Is_Granded("ROLE_ADMIN") %}
                         <li class="nav-item active"><a class="nav-link" href="{{ path('homepage') }}">home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ path('medicijn_index') }}">medicijnen</a>
-                        </li>
+                        <li class="nav-item"><a class="nav-link" href="{{ path('medicijn_index') }}">medicijnen</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ path('recept_index') }}">recepten</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ path('patient_index') }}">patienten</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ path('arts_index') }}">artsen</a></li>
                         <li class="nav-item"><a class="nav-link" href="{{ path('afdeling_index') }}">afdelingen</a></li>
-{#                        <li class="nav-item"><a class="nav-link" href="{{ path('') }}">admin</a></li>#}
+                        {% else %}
                         <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                        {% endif %}
                     {% endblock %}
-
                 </ul>
                 <ul class=" navbar-nav ml-auto">
                     {% block menu_right %}
                         {% if app.user %}
-                            <li class="nav-item "><a class="nav-link" href="{{ path('app_logout') }}">uitloggen</a></li>
+                            <li class="nav-item "><a class="nav-link" href="{{ path('app_logout') }}"><button class="btn btn-outline-danger">Uitloggen</button></a></li>
                         {% else %}
-                            <li class="nav-item "><a class="nav-link" href="{{ path('app_login') }}">inloggen</a></li>
+                            <li class="nav-item "><a class="nav-link" href="{{ path('app_login') }}"><button class="btn btn-outline-success">Inloggen</button></a></li>
                         {% endif %}
-                        <li class="nav-item"><a class="nav-link" href="{{ path('app_register') }}">registeren</a></li>
-                        {#                        <li class="nav-item"><a class="nav-link" href="{{ path('') }}">registeren arts</a></li>#}
                     {% endblock %}
                 </ul>
             </div>
