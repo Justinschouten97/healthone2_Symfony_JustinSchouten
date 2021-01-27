@@ -2,86 +2,99 @@
 
 {% block body %}
     <div class="container" style="background-color: white">
-    <header>
-        <div class="row" style="margin-top: 20px">
-            <div class="d-none d-md-block col-sm-1">
-                <span class="fas fa-hand-holding-medical" style="font-size:50px; color:red"></span>
+        <header>
+            <div class="row" style="margin-top: 20px">
+                <div class="d-none d-md-block col-sm-1">
+                    <span class="fas fa-hand-holding-medical" style="font-size:50px; color:red"></span>
+                </div>
+                <div class="col-sm-11 btn btn-fill mt-4">
+                    <h1>HealthOne <span class="text-danger"> Today</span></h1>
+                </div>
+                {% if app.user %}
+                    <div class="btn btn-fill">Welkom {{ app.user.username }}!</div>
+                {% endif %}
             </div>
-            <div class="col-sm-11 btn btn-fill mt-4">
-                <h1>HealthOne <span class="text-danger"> Today</span></h1>
+            {% for message in app.flashes('notice') %}
+                <div class="alert alert-success">
+                    <strong>Success!</strong> {{ message }}
+                </div>
+            {% endfor %}
+            {% for message in app.flashes('error') %}
+                <div class="alert alert-danger">
+                    <strong>Fout!</strong> Gebruiker {{ message }}
+                </div>
+            {% endfor %}
+        </header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-togler" style="margin-bottom: 0px">
+            <a class="navbar-brand" href="#"><span class="fas fa-hospital"></span> </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
+                <span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="navbar-nav">
+                    {% block menu %}
+                        {% if is_granted("ROLE_ADMIN") %}
+                            <li class="nav-item active"><a class="nav-link" href="{{ path('homepage') }}">home</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ path('medicijn_index') }}">medicijnen</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ path('recept_index') }}">recepten</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ path('patient_index') }}">patienten</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="{{ path('arts_index') }}">artsen</a></li>
+                            <li class="nav-item"><a class="nav-link" href="{{ path('afdeling_index') }}">afdelingen</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                        {% else %}
+                            <li class="nav-item active"><a class="nav-link" href="{{ path('home_bezoeker') }}">home</a>
+                            </li>
+                            <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                        {% endif %}
+                    {% endblock %}
+                </ul>
+                <ul class=" navbar-nav ml-auto">
+                    {% block menu_right %}
+                        {% if app.user %}
+                            <li class="nav-item "><a class="nav-link" href="{{ path('app_logout') }}">
+                                    <button class="btn btn-outline-danger">Uitloggen</button>
+                                </a></li>
+                        {% else %}
+                            <li class="nav-item "><a class="nav-link" href="{{ path('app_login') }}">
+                                    <button class="btn btn-outline-success">Inloggen</button>
+                                </a></li>
+                        {% endif %}
+                    {% endblock %}
+                </ul>
+        </nav>
+        <figure style="text-align: center">
+            <img style="margin-bottom: 20px" class="img-fluid" alt="Foto niet gelinkt"
+                 src={{ asset('img/images-4.jpg') }}/>
+        </figure>
+        {% block content %}
+            <div class="text-center border">
+                <h1>Test fase</h1>
+                <p>Je kan daarom voor nu inloggen met
+                <hr>
+                "admin1" en "123456",
+                <hr>
+                "medewerker1" en "123456"
+                <hr>
+                "arts1" en "123456".
+                </p>
             </div>
-            {% if app.user %}
-                <div class="btn btn-fill">Welkom {{ app.user.username }}!</div>
-            {% endif %}
-        </div>
-        {% for message in app.flashes('notice') %}
-            <div class="alert alert-success">
-                <strong>Success!</strong> {{ message }}
-            </div>
-        {% endfor %}
-        {% for message in app.flashes('error') %}
-            <div class="alert alert-danger">
-                <strong>Fout!</strong> Gebruiker {{ message }}
-            </div>
-        {% endfor %}
-    </header>
-    <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-togler" style="margin-bottom: 0px">
-        <a class="navbar-brand" href="#"><span class="fas fa-hospital"></span> </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar">
-            <span class="navbar-toggler-icon"></span></button>
-        <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="navbar-nav">
-                {% block menu %}
-                    {% if is_granted("ROLE_ADMIN") %}
-                        <li class="nav-item active"><a class="nav-link" href="{{ path('homepage') }}">home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ path('medicijn_index') }}">medicijnen</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ path('recept_index') }}">recepten</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ path('patient_index') }}">patienten</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ path('arts_index') }}">artsen</a></li>
-                        <li class="nav-item"><a class="nav-link" href="{{ path('afdeling_index') }}">afdelingen</a></li>
-                    {% else %}
-                        <li class="nav-item active"><a class="nav-link" href="{{ path('home_bezoeker') }}">home</a></li>
-                        <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
-                    {% endif %}
-                {% endblock %}
-            </ul>
-            <ul class=" navbar-nav ml-auto">
-                {% block menu_right %}
-                    {% if app.user %}
-                        <li class="nav-item "><a class="nav-link" href="{{ path('app_logout') }}">
-                                <button class="btn btn-outline-danger">Uitloggen</button>
-                            </a></li>
-                    {% else %}
-                        <li class="nav-item "><a class="nav-link" href="{{ path('app_login') }}">
-                                <button class="btn btn-outline-success">Inloggen</button>
-                            </a></li>
-                    {% endif %}
-                {% endblock %}
-            </ul>
-    </nav>
-    <figure style="text-align: center">
-        <img style="margin-bottom: 20px" class="img-fluid" alt="Foto niet gelinkt"
-             src={{ asset('img/images-4.jpg') }}/>
-    </figure>
-    {% block content %}
-        <h1>Test fase</h1>
-        <p>Je kan daarom voor nu inloggen met "admin1" en "123456"
-            of met "arts1" en "123456".
-        </p>
-    {% endblock %}
-    <hr>
-    {% block footer %}
-        <footer>
-            <a href="#" class="fa fa-facebook"></a>
-            <a href="#" class="fa fa-twitter"></a>
-            <a href="#" class="fa fa-snapchat"></a>
-            <a href="#" class="fa fa-whatsapp"></a>
-            <a href="#" class="fa fa-youtube"></a>
-            <a href="#" class="fa fa-pinterest"></a>
-            <p class="text-muted text-center">&copy;afdeling applicatieontwikkelaar Tinwerf 16, 2544 ED Den Haag.
-                Telefoon: 06 - 12345678 </p>
-        </footer>
-    {% endblock %}
+        {% endblock %}
+        <hr>
+        {% block footer %}
+            <footer class="text-center">
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-snapchat"></a>
+                <a href="#" class="fa fa-whatsapp"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <hr>
+                <p class="text-muted">&copy;afdeling applicatieontwikkelaar Tinwerf 16, 2544 ED Den Haag. Telefoon: 06 - 12345678 </p>
+                <p class="text-muted">@2020 Justin Schouten 2HA</p>
+            </footer>
+        {% endblock %}
     </div>
     </div>
 {% endblock %}

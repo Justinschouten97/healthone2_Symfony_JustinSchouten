@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="67ec40ed-17b5-4f4e-bd77-8ab7ebc5efc1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/migrations/Version20210127004758.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Controller/BezoekerController.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/bezoeker/index.html.twig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/css/stylesIcons.css" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/bootstrap.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/cli-config.php" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/migrations/Version20210116151544.php" afterDir="false" />
@@ -66,22 +64,11 @@
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/registration/register.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/security/login.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7_JustinSchouten(1.3).zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env" beforeDir="false" afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/migrations/Version20210126214301.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AfdelingController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AfdelingController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArtsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArtsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MedicijnController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedicijnController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/PatientController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PatientController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ReceptController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ReceptController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/SecurityController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/SecurityController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Entity/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Entity/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/BezoekerController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/BezoekerController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/bezoeker/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/bezoeker/index.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/default.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/security/login.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/security/login.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.idea/healthone7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.idea/healthone7.iml" afterDir="false" />
@@ -102,6 +89,13 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -226,6 +220,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../healthone7" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="web.server" />
     <property name="vue.rearranger.settings.migration" value="true" />
