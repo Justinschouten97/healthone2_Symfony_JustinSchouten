@@ -23,7 +23,7 @@
         {% for recept in recepts %}
             <tr>
                 <td>{{ recept.id }}</td>
-                <td>{{ recept.patient.tussenvoegsel }}{{ recept.patient.achternaam }}, {{ recept.patient.naam }}</td>
+                <td>{{ recept.patient.tussenvoegsel }} {{ recept.patient.achternaam }}, {{ recept.patient.naam }}</td>
                 <td>{{ recept.dosis }}</td>
                 <td>{{ recept.herhalingen }}</td>
                 <td>{{ recept.afgifteDatum ? recept.afgifteDatum|date('Y-m-d') : '' }}</td>

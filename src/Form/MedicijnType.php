@@ -6,6 +6,7 @@ namespace App\Form;
 
 use App\Entity\Medicijn;
 use Symfony\Component\Form\AbstractType;
+use Symfony\Component\Form\Extension\Core\Type\ChoiceType;
 use Symfony\Component\Form\FormBuilderInterface;
 use Symfony\Component\OptionsResolver\OptionsResolver;
 
@@ -18,6 +19,12 @@ class MedicijnType extends AbstractType
             ->add('medicijnNaam')
             ->add('medicijnWerking')
             ->add('medicijnBijwerking')
+            ->add('verzekerd', ChoiceType::class, [
+                'choices' => [
+                    'Ja' => '0',
+                    'Nee' => '1',
+                ]
+            ])
         ;
     }
 

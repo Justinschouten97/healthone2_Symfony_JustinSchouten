@@ -12,6 +12,7 @@
                 <th>MedicijnNaam</th>
                 <th>MedicijnWerking</th>
                 <th>MedicijnBijwerking</th>
+                <th>Verzekerd</th>
                 <th>actions</th>
             </tr>
         </thead>
@@ -22,6 +23,7 @@
                 <td>{{ medicijn.medicijnNaam }}</td>
                 <td>{{ medicijn.medicijnWerking }}</td>
                 <td>{{ medicijn.medicijnBijwerking }}</td>
+                <td>{% if medicijn.verzekerd != 1 %}Verzekerd {% else %}Onverzekerd{% endif %}</td>
                 <td>
                     <a href="{{ path('medicijn_show', {'id': medicijn.id}) }}"><button class="btn btn-outline-success">show</button></a>
                     <a href="{{ path('medicijn_edit', {'id': medicijn.id}) }}"><button class="btn btn-outline-warning">edit</button></a>
