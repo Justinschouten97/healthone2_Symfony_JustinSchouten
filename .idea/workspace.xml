@@ -64,13 +64,7 @@
       <change afterPath="$PROJECT_DIR$/../healthone7/templates/security/login.html.twig" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/../healthone7_JustinSchouten(1.3).zip" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/config/packages/security.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/config/packages/security.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/AdminController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/ArtsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/ArtsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/MedicijnController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/MedicijnController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controller/RegistrationController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/RegistrationController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/default.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/default.html.twig" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/medicijn/index.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/medicijn/index.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controller/UserController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/UserController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone4/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone4/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.env" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../healthone7/.idea/healthone7.iml" beforeDir="false" afterPath="$PROJECT_DIR$/../healthone7/.idea/healthone7.iml" afterDir="false" />
@@ -255,7 +249,7 @@
       <workItem from="1611172750012" duration="11992000" />
       <workItem from="1611494863640" duration="622000" />
       <workItem from="1611659259209" duration="5272000" />
-      <workItem from="1611762732006" duration="3241000" />
+      <workItem from="1611762732006" duration="3881000" />
     </task>
     <servers />
   </component>
