@@ -10,11 +10,11 @@
             <tr>
                 <th>Id</th>
                 <th>Patient naam</th>
-                <th>Dosis</th>
+                <th>Dosis (per dag)</th>
                 <th>Herhalingen</th>
                 <th>AfgifteDatum</th>
                 <th>GebruikenTot</th>
-                <th>Duur</th>
+                <th>Duur (maanden)</th>
                 <th>Arts</th>
                 <th>actions</th>
             </tr>
@@ -25,7 +25,7 @@
                 <td>{{ recept.id }}</td>
                 <td>{{ recept.patient.tussenvoegsel }} {{ recept.patient.achternaam }}, {{ recept.patient.naam }}</td>
                 <td>{{ recept.dosis }}</td>
-                <td>{{ recept.herhalingen }}</td>
+                <td>{{ recept.herhalingen}} {% if 0 %} maand na afronding {% else %} maanden na afronding{% endif %}</td>
                 <td>{{ recept.afgifteDatum ? recept.afgifteDatum|date('Y-m-d') : '' }}</td>
                 <td>{{ recept.gebruikenTot ? recept.gebruikenTot|date('Y-m-d') : '' }}</td>
                 <td>{{ recept.duur }}</td>
