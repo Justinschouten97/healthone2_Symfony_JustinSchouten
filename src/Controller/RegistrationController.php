@@ -44,7 +44,14 @@ class RegistrationController extends AbstractController
 
             if ($user = ["ROLE_ADMIN"]) {
                 return $this->redirectToRoute('homepage');
-            } else {
+            }
+            if ($user = ["ROLE_ARTS"]) {
+                return $this->redirectToRoute('patient_index');
+            }
+            if ($user = ["ROLE_MEDEWERKER"]) {
+                return $this->redirectToRoute('medicijn_index');
+            }
+            else {
                 return $this->redirectToRoute('home_bezoeker');
             }
         }

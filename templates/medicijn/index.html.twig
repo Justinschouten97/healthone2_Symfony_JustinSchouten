@@ -13,7 +13,9 @@
                 <th>MedicijnWerking</th>
                 <th>MedicijnBijwerking</th>
                 <th>Verzekerd</th>
+                {% if is_granted(['ROLE_ADMIN']) %}
                 <th>actions</th>
+                {% endif %}
             </tr>
         </thead>
         <tbody>
@@ -25,8 +27,10 @@
                 <td>{{ medicijn.medicijnBijwerking }}</td>
                 <td>{% if medicijn.verzekerd != 1 %}Verzekerd {% else %}Onverzekerd{% endif %}</td>
                 <td>
+                    {% if is_granted(['ROLE_ADMIN']) %}
                     <a href="{{ path('medicijn_show', {'id': medicijn.id}) }}"><button class="btn btn-outline-success">show</button></a>
                     <a href="{{ path('medicijn_edit', {'id': medicijn.id}) }}"><button class="btn btn-outline-warning">edit</button></a>
+                    {% endif %}
                 </td>
             </tr>
         {% else %}
@@ -36,6 +40,7 @@
         {% endfor %}
         </tbody>
     </table>
-
+    {% if is_granted(['ROLE_ADMIN']) %}
     <a href="{{ path('medicijn_new') }}"><button class="btn btn-outline-primary">New</button></a>
+    {% endif %}
 {% endblock %}

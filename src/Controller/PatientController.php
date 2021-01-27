@@ -6,13 +6,14 @@ use App\Entity\Patient;
 use App\Form\PatientType;
 use App\Repository\PatientRepository;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\IsGranted;
+use Sensio\Bundle\FrameworkExtraBundle\Configuration\Security;
 use Symfony\Bundle\FrameworkBundle\Controller\AbstractController;
 use Symfony\Component\HttpFoundation\Request;
 use Symfony\Component\HttpFoundation\Response;
 use Symfony\Component\Routing\Annotation\Route;
 
 /**
- * @IsGranted("ROLE_ADMIN")
+ * @Security("has_role('ROLE_ADMIN') or has_role('ROLE_ARTS')")
  * @Route("/patient")
  */
 class PatientController extends AbstractController
